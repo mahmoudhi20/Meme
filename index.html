@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🔥 Meme Gallery 🔥</h1>
+    <div class="gallery">
+        <img src="imgs/meme1..jpg" alt="Meme 1" onclick="openLightbox(0)">
+        <img src="imgs/meme2.jpg" alt="Meme 2" onclick="openLightbox(1)">
+        <img src="imgs/meme3.jpg" alt="Meme 3" onclick="openLightbox(2)">
+        <img src="imgs/meme4.jpg" alt="Meme 4" onclick="openLightbox(3)">
+        <img src="imgs/meme5.jpg" alt="Meme 4" onclick="openLightbox(4)">
+        <img src="imgs/meme6.jpg" alt="Meme 4" onclick="openLightbox(5)">
+        <img src="imgs/meme7.jpg" alt="Meme 4" onclick="openLightbox(6)">
+    </div>
+
+    <!-- Lightbox (Hidden by default) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="">
+        <div class="nav">
+            <button onclick="prevImage()">&#10094; Prev</button>
+            <button onclick="nextImage()">Next &#10095;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
